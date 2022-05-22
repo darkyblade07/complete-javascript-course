@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 90%;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 10px;
+    width: 90%;
+    height: 35px;
+    padding-left: 5px;
+
+}
