@@ -1,22 +1,18 @@
-window.onload(){
 
-    var cantidadDePersonasIn = document.getElementById('cantidadDePersonasIn')
-    var cantidadDeTelasPorPersonasIn = document.getElementById('cantidadDeTelasPorPersonasIn');
-    var calcularBtn = document.getElementById('calcularBtn');
-    var resultadoLbl = document.getElementById('resultadoLbl');
+   window.onload = function(){
+    var btn = document.getElementById('btn');
 
-calcularBtn.onclick=calcularBtn;
+    function calcularPrecio(){
+        var personas = Number(document.getElementById('personas').value);
+        var tela = Number(document.getElementById('tela').value);
+        var precio = 3550;
+        var total = document.getElementById('resultadoLbl');
 
+        var operacion = personas*(tela*3550);
 
+        total.innerHTML = `El total es: `+operacion;
+    }
 
-function calcularBtn (){
-var cantidadDePersonas=Number(cantidadDeTelasPorPersonasIn.value);
-var cantidadDeTelasPorPersonasIn=Number(cantidadDeTelasPorPersonasIn.value);
-var precioDeLaTela=3550;
-var precioFinal= (precioDeLaTela*cantidadDeTelasPorPersonasIn);
-resultadoLbl.innerHTML='Precio final: ' +precioFinal.toFixed(2);
-
-
+    btn.addEventListener('click',calcularPrecio);
 }
 
-}
