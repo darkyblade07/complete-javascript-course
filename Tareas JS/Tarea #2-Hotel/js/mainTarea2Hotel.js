@@ -6,6 +6,8 @@ window.onload = function() {
 
     var resultadoLbl = document.getElementById('resultadoLbl');
 
+    var precioBrutoInput2 = document.getElementById('precioBrutoInput2')
+
     console.dir(calcularBtn);
 
 
@@ -13,10 +15,24 @@ window.onload = function() {
 
     function onCalcularBtn() {
         var precioBruto = Number(precioBrutoInput.value);
-        var impuesto = 0.05;
-        var precioNeto = precioBruto - (precioBruto * impuesto);
-        console.log('Precio Neto: ' + precioNeto.toFixed(2))
-        resultadoLbl.innerHTML = 'Total ' + precioNeto.toFixed(2);
+        var tipoDeCliente = Number(precioBrutoInput2.value);
+        var total = precioBruto * 100;
+        var promo = 0.05;
+        var promoFrec = 0.10;
+
+        if (tipoDeCliente == 1) {
+            var precioNeto = total - (total * promo);
+            resultadoLbl.innerHTML = 'Total de estadia: $' + precioNeto.toFixed(2);
+
+        } else if (tipoDeCliente == 2) {
+            var precioNeto = total - (total * promoFrec);
+            resultadoLbl.innerHTML = 'Total de estadia: $' + precioNeto.toFixed(2);
+
+        } else {
+            resultadoLbl.innerHTML = 'Digite tipo de cliente valido';
+
+        }
+
     }
 
 }
