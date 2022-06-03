@@ -18,6 +18,11 @@ window.onload = function() {
 
     calcularBtn2.onclick = onCalcularBtn2;
 
+    /**
+     * The function onCalcularBtn() is called when the user clicks the button. The function gets the
+     * values from the two input fields, converts them to numbers, and then displays the larger of the
+     * two numbers in the result label.
+     */
     function onCalcularBtn() {
         var numero1 = Number(precioBrutoInput.value);
         var numero2 = Number(precioBrutoInput2.value);
