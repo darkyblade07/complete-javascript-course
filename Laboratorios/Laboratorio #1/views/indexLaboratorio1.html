@@ -14,42 +14,47 @@
 </head>
 
 <body>
-    <div class="mainContainer container">
-        <div class="title mt-5">
-            <h2>Simple Calculadora</h2>
+    <div class="mainContainer">
+        <div class="title btnPurple text-white w-100  ">
+            <h1 class="ml25">UI del ejercicio 17</h1>
         </div>
+        <div class="container ">
+            <div class="subtitle mt-5 ">
+                <h2>Simple Calculadora</h2>
+            </div>
 
-        <div class="container">
-            <div class="row box1">
-                <div class="col-2">
-                    <input type="number" id="numero1">
+            <div class="container">
+                <div class="row box1 align-items-center mb-2">
+                    <div class=" col-sm-12 	col-lg-2  ">
+                        <input type="number" class='radius' id="numero1">
 
+                    </div>
+                    <div class="col-sm-12 col-lg-2 ">
+                        <input type="number" id="numero2" class='radius'> </div>
+                    <div class="col-sm-12 col-lg-2 ">
+
+                        <button id="clearBtn" class="bg-danger text-white  radius padding w-100 "> Clear</button>
+
+                    </div>
                 </div>
-                <div class="col-2">
-                    <input type="number" id="numero2"> </div>
-                <div class="col-8">
+                <div class="row box2 ">
+                    <div class="col-sm-12 col-lg-2">
+                        <button id="sumBtn" class="btnPurple w-100 text-white radius  "> Sumar</button>
 
-                    <button id="clearBtn" class="bg-danger w-25 text-white  "> Clear</button>
-
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <button id="resBtn" class="btnPurple w-100 text-white radius "> Restar</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 ">
+                        <button id="multBtn" class="btnPurple w-100 text-white radius ">Multiplicar</button>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 ">
+                        <button id="divBtn" class="btnPurple w-100 text-white radius "> Dividir</button>
+                    </div>
                 </div>
             </div>
-            <div class="row box2">
-                <div class="col-3">
-                    <button id="sumBtn" class="bg-danger w-25 text-white  "> Sumar</button>
-
-                </div>
-                <div class="col-3">
-                    <button id="resBtn" class="bg-danger w-25 text-white "> Restar</button>
-                </div>
-                <div class="col-3 ">
-                    <button id="multBtn" class="bg-danger w-25 text-white "> Multiplicar</button>
-                </div>
-                <div class="col-3 ">
-                    <button id="divBtn" class="bg-danger w-25 text-white "> Dividir</button>
-                </div>
-            </div>
         </div>
-        <h2 id="total"></h2>
+        <h3 id="total"></h3>
 
     </div>
 

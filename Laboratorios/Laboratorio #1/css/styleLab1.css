@@ -1,0 +1,13 @@
+.btnPurple {
+    background-color: hsl(282, 44%, 47%);
+}
+
+.radius {
+    border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
