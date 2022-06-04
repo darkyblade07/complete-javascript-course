@@ -7,8 +7,7 @@ window.onload = function() {
     var divBtn = document.getElementById('divBtn');
     var numero1 = document.getElementById('numero1');
     var numero2 = document.getElementById('numero2');
-    var resultadoLbl = document.getElementById('resultadoLbl');
-
+    var total = document.getElementById('total');
 
 
     console.dir(clearBtn);
@@ -32,23 +31,17 @@ window.onload = function() {
      * two numbers in the result label.
      */
     function onclearBtn() {
-        var numeroUno = Number(numero1.value);
-        var numeroDos = Number(numero2.value);
-
-        console.log('Numeros:' + numeroUno + numeroDos);
-
+        numero1.value = '';
+        numero2.value = '';
 
     }
-
-
 
     function onsumBtn() {
         var numeroUno = Number(numero1.value);
         var numeroDos = Number(numero2.value);
+        var suma = numeroUno + numeroDos;
 
-        resultadoLbl.innerHTML = 'Maximo:' +
-            Math.max(numeroUno, numeroDos);
-
+        total.innerHTML = 'Resultado: ' + suma;
 
     }
 
@@ -56,8 +49,9 @@ window.onload = function() {
         var numeroUno = Number(numero1.value);
         var numeroDos = Number(numero2.value);
 
-        resultadoLbl.innerHTML = 'Maximo:' +
-            Math.max(numeroUno, numeroDos);
+        var div = numeroUno / numeroDos;
+
+        total.innerHTML = 'Resultado: ' + div;
 
 
     }
@@ -66,8 +60,9 @@ window.onload = function() {
         var numeroUno = Number(numero1.value);
         var numeroDos = Number(numero2.value);
 
-        resultadoLbl.innerHTML = 'Maximo:' +
-            Math.max(numeroUno, numeroDos);
+        var resta = numeroUno - numeroDos;
+
+        total.innerHTML = 'Resultado: ' + resta;
 
 
     }
@@ -76,8 +71,10 @@ window.onload = function() {
         var numeroUno = Number(numero1.value);
         var numeroDos = Number(numero2.value);
 
-        resultadoLbl.innerHTML = 'Maximo:' +
-            Math.max(numeroUno, numeroDos);
+        var mult = numeroUno * numeroDos;
+
+        total.innerHTML = 'Resultado: ' + mult;
+
 
     }
 
