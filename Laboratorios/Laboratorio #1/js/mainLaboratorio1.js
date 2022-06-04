@@ -33,6 +33,8 @@ window.onload = function() {
     function onclearBtn() {
         numero1.value = '';
         numero2.value = '';
+        total.innerHTML = '';
+
 
     }
 
