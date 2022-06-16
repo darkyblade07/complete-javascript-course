@@ -36,7 +36,7 @@ function init() {
         var email = emailIn.value;
         var isOK = true;
 
-        if (nombre === '' || apellido === '' || nota === '' || email === '' ) {
+        if (nombre === '' || apellido === '' || nota === '' || email === '') {
             nombreIn.classList.add('error');
             apellidoIn.classList.add('error');
             notaIn.classList.add('error');
@@ -50,7 +50,7 @@ function init() {
 
 
         }
- if (isOK) {
+        if (isOK) {
             nombres.push(nombre);
             apellidos.push(apellido);
             notas.push(Number(nota));
@@ -63,8 +63,8 @@ function init() {
 
     function onBuscarBtn() {
         console.log(estudiantesSlt.value);
-    
-        estudianteInfo.innerHTML = 'Informacion: ' + nombres[estudiantesSlt.value]  + ' ' + apellidos[estudiantesSlt.value] + ','  + ' Email: '+ emails[estudiantesSlt.value] + ', '  + 'Nota: ' +notas[estudiantesSlt.value];
+
+        estudianteInfo.innerHTML = 'Informacion: ' + nombres[estudiantesSlt.value] + ' ' + apellidos[estudiantesSlt.value] + ',' + ' Email: ' + emails[estudiantesSlt.value] + ', ' + 'Nota: ' + notas[estudiantesSlt.value];
 
     }
 
