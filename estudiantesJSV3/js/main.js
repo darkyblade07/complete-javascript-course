@@ -1,3 +1,9 @@
+/**
+* @name main.js
+* @file Add a small description for this file.
+* @author <Add Your Name Here>, <addyouremail@mail.com>
+* @version 1.0.0
+*/
 
 "use strict";
 
@@ -21,7 +27,6 @@ function init() {
     buscarBtn.onclick = onBuscarBtn;
     eliminarBtn.onclick = onEliminarBtn;
     var estudiantes = [];
-    var row = 1;
 
     if (window.localStorage.getItem('estudiantes') !== null) {
         cargarDesdeLocalStorage();
@@ -119,22 +124,26 @@ function init() {
         estudianteInfo.innerHTML = '';
         estudiantesSlt.innerHTML = '';
 
-        for (let index = 0; index < estudiantes.length; index++) {
-            var persona = estudiantes[index];
-            var nombre = persona.nombre;
-            var apellido = persona.apellido;
-            var option = document.createElement('option');
-            estudiantesSlt.appendChild(option);
-            option.innerHTML = nombre + ' ' + apellido;
-            option.value = persona.email;
-        }
-    }
+      
 
     function llenarEstudiantesTbl() {
+        estudiantesTbl.innerHTML = '';
+
         for (let index = 0; index < estudiantes.length; index++) {
             var persona = estudiantes[index];
             var nombre = persona.nombre;
             var apellido = persona.apellido;
+            nombre = document.createElement('td');
+            apellido.appendChild()
+            var table = document.createElement('table');
+            estudiantesTbl.appendChild(table);
+            table.innerHTML = nombre + ' ' + apellido;
+            table.value = persona.email;
+        }
+    }
+    }
+
+
         //TODO:
         //1. Llenar la table con los datos en estudiantes.
         //2. Agregar el td de eliminar un evento onclick = onEliminarTd
