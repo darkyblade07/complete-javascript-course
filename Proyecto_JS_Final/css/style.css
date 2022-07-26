@@ -3,3 +3,7 @@
    height: 100%;
    background-color: darksalmon;
 }
+
+button {
+   min-height: 30px;
+}

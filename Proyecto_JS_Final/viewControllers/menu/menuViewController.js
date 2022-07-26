@@ -35,8 +35,13 @@ this.contentContainer.className = ('menuViewController_contentContainer');
         scoresBtn.onclick = this.onscoresBtn.bind(this);
 
     onplayBtn();{
+var username = this.usernameIn.value
+if (username!= '') {
+    this.appManager.setusername(username);
+   
+    this.appManager.showGame();
 
-        this.appManager.showGame();
+}
 
     }
 

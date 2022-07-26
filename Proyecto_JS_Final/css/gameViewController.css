@@ -1,0 +1,51 @@
+.gameViewController{
+
+}
+
+
+.gameViewController.contentContainer{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.gameViewController.hubContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+}
+
+.gameViewController_timeLbl{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.gameViewController_clicksLbl{
+    margin-left: 5px;
+    font-size: 16px;
+
+}
+.gameViewController_resetBtn{
+margin-right: 5px
+}
+
+.gameViewController_card{
+    width: 80;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+
+
+}
+
+.gameViewController.cardsContainer{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    flex-wrap: wrap;
+    font-size: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
