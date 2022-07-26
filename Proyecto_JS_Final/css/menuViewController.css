@@ -1,0 +1,28 @@
+.menuViewController_contentContainer{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.text1lbl{
+font-size: 25px;
+font-weight: bold;
+}
+
+.text2lbl{
+    font-size: 20px;
+
+}
+
+.usernameIn{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.playbtn{
+    width: 90%;
+    height: 30px;
+}

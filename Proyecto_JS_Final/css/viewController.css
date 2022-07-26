@@ -1,0 +1,29 @@
+.viewController {}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.navigationBar {
+    width: 100%;
+    height: 60px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentContainer {
+    width: 100%;
+    height: calc(100%-60px) background-color: beige;
+}
+
+.viewController .titlelbl {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
