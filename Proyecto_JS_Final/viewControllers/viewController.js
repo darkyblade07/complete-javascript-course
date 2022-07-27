@@ -1,7 +1,9 @@
-export class viewController {
+import { view } from "../js/view/view.js";
+
+export class viewController extends view {
     constructor(appManager, parent, title = ''){
+        super(parent);
         this.appManager = appManager;
-        this.parent = parent;
         this.mainContainer = document.createElement('div');
         this.navigationBar = document.createElement('div');
         this.contentContainer = document.createElement('div');
